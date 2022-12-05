@@ -1,0 +1,306 @@
+:root {
+    --violetSoft: #9D71FD;
+    --purpleLight: #D7CFFD;
+    --violetDark:#1A0745;
+  }
+
+
+ .lines {
+    flex:1 120px; 
+    max-width:120px;
+    height:200px;
+    /* background-color: red; */
+    /* margin:auto; */
+    /* margin-top:3px; */
+}
+
+.left-lines{
+
+    
+  }
+ 
+  .right-lines{
+    transform:scale(-1,1)
+  }
+  .line-wrapper{
+    position:relative;
+    
+  }
+  
+  .line {
+    display:flex;
+    flex-direction:column;
+    height:101px;
+    
+  }
+  
+  .line.top{
+    margin-bottom:-2px;
+  
+  }
+  
+  .line.bot{
+    margin-top:-2px;
+  
+  }
+  
+  .v2{
+    transform:rotateZ(360deg)
+  }
+  
+  .cont {
+    flex:1;
+    /* background-color: rgb(41, 41, 196); */
+    color:white;
+    display:flex;
+
+    /* transform:scale(-1,1) */
+  }
+  
+  .cont div{
+    flex:1;
+ 
+    
+  }
+  
+  .top-right{
+    border:2px solid var(--purpleLight);
+    border-left:none;
+    border-bottom:none;
+    border-top-right-radius:12px;
+    
+  }
+  
+  .lineRight{
+    border:2px solid var(--purpleLight);
+    border-right:none;
+    border-top:none;
+    border-bottom-left-radius:12px;
+    z-index:123;
+  }
+  
+  .bottom-right{
+  
+    border:2px solid var(--purpleLight);
+    border-left:none;
+    border-top:none;
+    border-bottom-right-radius:12px;
+  }
+  
+  .top-left{
+    border:2px solid var(--purpleLight);
+    border-bottom:none;
+    border-right:none;
+    border-top-left-radius:12px;
+  }
+  
+  .mid-line{
+    height:2px;
+    width:100%;
+    background-color:var(--purpleLight);
+    position:absolute;
+    bottom:0px;
+    
+  }
+
+
+  .line-highilited{
+    border-color:var(--violetSoft);
+    z-index:1231451231;
+  }
+
+
+
+  .mid-line.line-highilited{
+    background-color:var(--violetSoft);
+    z-index:1231451231;
+  }
+
+
+/* figma */
+
+
+.graph{
+    display:flex;
+    /* background-color:rgb(79, 149, 184); */
+    justify-content: center;
+    align-items: center;
+    padding:0 26px;
+
+}
+
+.employee-card{
+    
+}
+
+
+/* benefit */
+
+.benefits{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:280px;
+    min-width:230px;
+    width:100%;
+}
+
+.benefit{
+    width:100%;
+    height:80px;
+    border: 1px solid #E8E6EC;
+    border-radius: 12px;
+    box-sizing:border-box;
+    padding:16px 21px 16px 16px;
+    display:flex;
+    align-items: center;
+    gap:8px;
+}
+
+.benefit__img{
+    border-radius: 12px;
+    width:48px;
+    height:48px;
+    object-fit: cover;
+}
+
+.benefit__texts h6{
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--violetDark);
+}
+
+.benefit__texts p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: #5F517D;
+}
+
+.benefit__switch{
+    margin-left:auto;
+}
+
+/* employee card */
+
+.graph__employee-card{
+    background: #F2EFFE;
+    border: 2px solid var(--violetSoft);
+    border-radius: 24px;
+    box-sizing:border-box;
+    padding:40px;
+    max-width:380px;
+    width:100%;
+    min-width:300px;
+    position:relative;
+}
+
+.emplpoyee-card__img{
+    width:86px;
+    height:86px;
+    border-radius:10px;
+    object-fit: cover;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+
+.employee-card__name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--violetDark);
+    margin:14px 0 6px 0;
+}
+
+
+.employee-card__occupation{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+text-align: center;
+color: #5F517D;
+margin-bottom:20px;
+}
+
+.employee-card__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--violetDark);  
+    text-align:center;
+    max-width:300px;
+}
+
+.employee-card__paragraph::before{
+    content:'“'
+}
+
+.employee-card__paragraph::after{
+    content:'”'
+}
+
+/* buisness types */
+
+.figma__buisness-types{
+    display:flex;
+    gap:8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:80px;
+}
+
+.buisness-type{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    border: 1px solid #E8E6EC;
+    border-radius:12px;
+    padding:9.5px 15px;
+    color:var(--violetDark);
+    cursor:pointer;
+}
+
+.buisness-type---hilighted{
+    background: #9D71FD;
+    color: #FFFFFF;
+    border:none;
+}
+
+/* responsive */
+.benefits--mobile{
+  display:none;
+}
+@media(max-width:870px){
+  .graph__employee-card{
+    padding:40px 12px 21px 12px;
+  }
+  .benefits, .lines{
+    display:none;
+  }
+  .graph{
+    width:fit-content;
+    margin:auto;
+    flex-direction: column;
+    gap:20px;
+  }
+  .benefits--mobile{
+    display:block;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+}
+
