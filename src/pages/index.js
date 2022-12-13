@@ -1,4 +1,4 @@
-import Figma from "./Figma/Figma";
-import ToDo from "./Todo/Todo";
+import ToDo from './Todo/Todo';
+import Eti from './Eti/Eti';
 
-export {Figma, ToDo} 
+export { ToDo, Eti };

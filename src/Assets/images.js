@@ -6,12 +6,11 @@ import benefit5photo from './images/benefit5.png';
 import benefit6photo from './images/benefit6.png';
 import hrAvatar from './images/hrAvatar.png';
 export {
-    benefit1photo,
-    benefit2photo,
-    benefit3photo,
-    benefit4photo,
-    benefit5photo,
-    benefit6photo,
-    hrAvatar
-    
-}
+  benefit1photo,
+  benefit2photo,
+  benefit3photo,
+  benefit4photo,
+  benefit5photo,
+  benefit6photo,
+  hrAvatar,
+};

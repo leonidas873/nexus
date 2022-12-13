@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React from 'react';
+import { useState } from 'react';
 
 const ToDo = () => {
   const [showActiveTodos, setShowActiveTodos] = useState(false);
   const [todos, setTodos] = useState(initialTodos);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
 
   const addNewTodo = () => {
     const updatedTodos = [...todos, createTodo(inputValue)];
@@ -11,9 +12,7 @@ const ToDo = () => {
   };
 
   const filterTodos = (onlyActives = false) => {
-    const res = onlyActives
-      ? todos.filter((el) => el.completed !== true)
-      : todos;
+    const res = onlyActives ? todos.filter((el) => el.completed !== true) : todos;
     return res;
   };
 
@@ -29,16 +28,11 @@ const ToDo = () => {
           Show only active todos
         </label>
       </div>
-      <input
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
+      <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
       <button onClick={addNewTodo}>Add</button>
       <ul>
         {filterTodos(showActiveTodos).map((todo) => (
-          <li key={todo.id}>
-            {todo.completed ? <s>{todo.text}</s> : todo.text}
-          </li>
+          <li key={todo.id}>{todo.completed ? <s>{todo.text}</s> : todo.text}</li>
         ))}
       </ul>
       <footer>{filterTodos(true).length} todos left</footer>
@@ -59,7 +53,7 @@ export function createTodo(text, completed = false) {
 }
 
 export const initialTodos = [
-  createTodo("Get apples", true),
-  createTodo("Get oranges", true),
-  createTodo("Get carrots"),
+  createTodo('Get apples', true),
+  createTodo('Get oranges', true),
+  createTodo('Get carrots'),
 ];
